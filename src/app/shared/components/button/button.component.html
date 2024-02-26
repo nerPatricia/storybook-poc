@@ -1,0 +1,11 @@
+<button type="button" [ngClass]="setButtonClass" (click)="onClick.emit()">
+  <span class="button__icon">
+    <ng-content select="[btnIcon]"></ng-content>
+  </span>
+
+  <div class="button__content">
+    <span>
+      <ng-content></ng-content>
+    </span>
+  </div>
+</button>

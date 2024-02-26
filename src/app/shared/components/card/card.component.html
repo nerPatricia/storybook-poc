@@ -1,0 +1,18 @@
+<div [ngClass]="setCardClass">
+  <div class="card__header">
+    <fa-icon class="card__header__icon" [icon]="headerIcon"></fa-icon>
+    <div>
+      <span class="card__header__title">{{ title }}</span>
+      <p class="card__header__subtitle">{{ subtitle }}</p>
+    </div>
+    <fa-icon
+      *ngIf="disabled"
+      class="card__header__lock-icon"
+      icon="lock"
+    ></fa-icon>
+  </div>
+  <div class="card__footer" (click)="!disabled ? onClick.emit() : null">
+    <span class="card__footer__title">{{ footerText }}</span>
+    <fa-icon icon="chevron-circle-right"></fa-icon>
+  </div>
+</div>

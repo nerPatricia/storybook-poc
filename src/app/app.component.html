@@ -1,0 +1,13 @@
+<app-card
+  title="Pronto Atendimento Online"
+  subtitle="Consulta médica por vídeo"
+  footerText="Assinar"
+  (onClick)="showConsoleLog()"
+></app-card>
+
+<app-button [disabled]="true">
+  <fa-icon btnIcon icon="lock"></fa-icon>
+  Botão
+</app-button>
+
+<input type="text" appPhoneMask placeholder="Telefone" />
