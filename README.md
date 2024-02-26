@@ -1,10 +1,13 @@
 # StorybookPoc
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0 and Storybook 7.6.
+The live example can be access in: https://poc-storybook.surge.sh/
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `npm run docs: serve` for a Storybook dev server. 
+Run `npm run docs:build` to generate the documentation static build.
 
 ## Code scaffolding
 
@@ -25,4 +28,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# storybook-poc
